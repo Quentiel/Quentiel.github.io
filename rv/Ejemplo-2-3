@@ -10,8 +10,10 @@
       &iexcl;No funciona!
     </canvas>
     <script>
-    var miCanvas = document.getElementById("MiCanvas")
+    var miCanvas = document.getElementById("MiCanvas");
     var contexto = miCanvas.getContext("2d");
     contexto.fillStyle = "red";
     contexto.fillRect(30, 30, 50, 50);
   </script>
+</body>
+</html>
