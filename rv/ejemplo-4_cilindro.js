@@ -9,13 +9,12 @@ renderizador.setSize( window.innerHeight*.95,
 			
 document.body.appendChild (renderizador.domElement);
 
-var geometry = new THREE.CylinderGeometry( 5, 5, 20, 32 );
-var material = new THREE.MeshBasicMaterial( {color: 0xffff00} );
-var cilindro = new THREE.Mesh( geometry, material );
+var forma = new THREE.BoxGeometry ( 1, 1, 1);
+var material = new THREE.MeshNormalMaterial(); 
+var cubo = new THREE.Mesh(forma, material);
 
-
-cilindro.rotateX(-Math.PI/1); 
-cilindro.rotateY(Math.PI/1);
-scene.add( cylinder );
+cubo.rotateX(-Math.PI/4); 
+cubo.rotateY(Math.PI/4);
+escena.add(cubo);
 
 renderizador.render(escena,camara);
