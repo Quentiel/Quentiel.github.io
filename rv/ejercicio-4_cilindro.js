@@ -10,8 +10,8 @@ renderizador.setSize( window.innerHeight*.95,
 document.body.appendChild (renderizador.domElement);
 
 var geometry = new THREE.CylinderGeometry( 5, 5, 20, 32 );
-var material = new THREE.MeshNormalMaterial(); 
-var cilindro = new THREE.MeshBasicMaterial( {color: 0xffff00} );
+var material = new THREE.MeshBasicMaterial( {color: 0xffff00} );
+var cilindro = new THREE.Mesh(forma, material);
 
 
 cilindro.rotateX(-Math.PI/1); 
