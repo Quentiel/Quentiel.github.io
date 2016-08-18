@@ -16,6 +16,6 @@ var cilindro = new THREE.MeshBasicMaterial( {color: 0xffff00} );
 
 cilindro.rotateX(-Math.PI/1); 
 cilindro.rotateY(Math.PI/1);
-scene.add( cilindro );
+scene.add(cilindro);
 
 renderizador.render(escena,camara);
