@@ -14,9 +14,13 @@ var geometry = new THREE.CylinderGeometry( 1, 1, 12, 30 );
 var material = new THREE.MeshBasicMaterial({color: 0x8B4513});
 var cilindro = new THREE.Mesh(geometry, material);
 
-
 cilindro.rotateX(-Math.PI/4); 
 cilindro.rotateY(Math.PI/5);
 escena.add(cilindro);
+
+var geometry1 = new THREE.SphereGeometry( 1, 1, 32 );
+var material1 = new THREE.MeshBasicMaterial( {color: 0x008000} );
+var sphere = new THREE.Mesh( geometry1, material1 );
+escena.add( sphere );
 
 renderizador.render(escena,camara);
