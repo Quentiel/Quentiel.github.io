@@ -9,7 +9,7 @@ renderizador.setSize( window.innerHeight*.95,
 			
 document.body.appendChild (renderizador.domElement);
 
-var geometry = new THREE.BoxGeometry( 1, 1, 1 );
+var geometry = new TREE.CylinderGeometry( 2, 2, 10, 12 );
 var material = new THREE.MeshNormalMaterial();
 var cilindro = new THREE.Mesh(geometry, material);
 
