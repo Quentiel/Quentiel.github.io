@@ -11,7 +11,7 @@ document.body.appendChild (renderizador.domElement);
 
 var geometry = new THREE.CylinderGeometry( 5, 5, 20, 32 );
 var material = new THREE.MeshNormalMaterial();
-var cilindro = new THREE.Mesh(forma, material);
+var cilindro = new THREE.Mesh(geometry, material);
 
 
 cilindro.rotateX(-Math.PI/1); 
