@@ -1,4 +1,5 @@
 var escena = new THREE.Scene();
+var escena2 = new THREE.Scene();
 
 var camara = new THREE.PerspectiveCamera();
 camara.position.z = 15;
@@ -21,6 +22,7 @@ escena.add(cilindro);
 var geometry1 = new THREE.SphereGeometry( 1, 1, 32 );
 var material1 = new THREE.MeshBasicMaterial( {color: 0x008000} );
 var sphere = new THREE.Mesh( geometry1, material1 );
-escena.add( sphere );
+escena2.add( sphere );
 
 renderizador.render(escena,camara);
+renderizador.render(escena2,camara);
