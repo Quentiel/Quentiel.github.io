@@ -15,7 +15,7 @@ var material = new THREE.MeshNormalMaterial();
 var cilindro = new THREE.Mesh(geometry, material);
 
 
-cilindro.rotateX(-Math.PI/2); 
+cilindro.rotateX(-Math.PI/4); 
 cilindro.rotateY(Math.PI/5);
 escena.add(cilindro);
 
