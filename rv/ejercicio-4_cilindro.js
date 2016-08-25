@@ -1,7 +1,7 @@
 var escena = new THREE.Scene();
 
 var camara = new THREE.PerspectiveCamera();
-camara.position.z = 10;
+camara.position.z = 2;
 
 var renderizador = new THREE.WebGLRenderer();
 renderizador.setSize( window.innerHeight*.95,
@@ -14,7 +14,7 @@ var material = new THREE.MeshNormalMaterial();
 var cilindro = new THREE.Mesh(geometry, material);
 
 
-cilindro.rotateX(-Math.PI/1); 
+cilindro.rotateX(-Math.PI/2); 
 cilindro.rotateY(Math.PI/5);
 escena.add(cilindro);
 
