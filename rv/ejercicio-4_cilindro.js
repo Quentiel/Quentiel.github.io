@@ -18,11 +18,10 @@ cilindro.rotateX(-Math.PI/4);
 cilindro.rotateY(Math.PI/5);
 escena.add(cilindro);
 
-var geometry1 = new THREE.SphereGeometry( 2, 32, 32 );
+var geometry1 = new THREE.SphereGeometry( 1, 32, 32 );
 var material1 = new THREE.MeshBasicMaterial( {color: 0x008000} );
 var sphere = new THREE.Mesh( geometry1, material1 );
-sphere.rotateX(-Math.PI/4); 
-sphere.rotateY(Math.PI/2);
+
 escena.add( sphere );
 
 renderizador.render(escena,camara);
