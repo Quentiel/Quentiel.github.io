@@ -1,4 +1,4 @@
-var troncoForma = new THREE.TorusGeometry(3, 1.5, 20, 100);
+var troncoForma = new THREE.TorusGeometry(1.5, 0.5, 20, 100);
 var esferaForma = new THREE.SphereGeometry(0.95);
 esferaForma.translate(0,1,0);
 
