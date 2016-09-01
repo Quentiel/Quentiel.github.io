@@ -4,7 +4,7 @@ var cajaForma = new THREE.BoxGeometry (1, 1, 1)
 
 esferaForma.translate(0,1,0);
 troncoForma.rotateX(Math.PI/2);
-cajaForma.translate (1,0,0);
+cajaForma.translate (0,-4,0);
 
 var troncoMalla = new THREE.Mesh(troncoForma);
 var esferaMalla = new THREE.Mesh(esferaForma);
