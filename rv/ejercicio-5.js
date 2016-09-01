@@ -1,5 +1,5 @@
-var troncoForma = new THREE.TorusGeometry(0.9, 0.3, 4, 100);
-var esferaForma = new THREE.SphereGeometry(0.95, 32, 32);
+var troncoForma = new THREE.TorusGeometry(0.5, 0.3, 4, 100);
+var esferaForma = new THREE.SphereGeometry(0.55, 32, 32);
 var cajaForma = new THREE.OctahedronGeometry (3, 0)
 
 esferaForma.translate(0,1,0);
