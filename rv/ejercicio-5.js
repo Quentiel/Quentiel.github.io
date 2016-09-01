@@ -1,10 +1,10 @@
 var troncoForma = new THREE.TorusGeometry(0.9, 0.3, 4, 100);
 var esferaForma = new THREE.SphereGeometry(0.95);
-var cajaForma = new THREE.BoxGeometry (3, 3, 3)
+var cajaForma = new THREE.BoxGeometry (1, 1, 1)
 
 esferaForma.translate(0,1,0);
 troncoForma.rotateX(Math.PI/2);
-cajaForma.translate (0,-2,0);
+cajaForma.translate (1,0,0);
 
 var troncoMalla = new THREE.Mesh(troncoForma);
 var esferaMalla = new THREE.Mesh(esferaForma);
@@ -14,7 +14,7 @@ var arbolForma = new THREE.Geometry();
 
 arbolForma.merge(troncoMalla.geometry, troncoMalla.matrix);
 arbolForma.merge(esferaMalla.geometry, esferaMalla.matrix);
-arbolForma.merge(cajaForma.geometry, cajaMalla.matrix)
+arbolForma.merge(cajaMalla.geometry, cajaMalla.matrix)
 
 var material = new THREE.MeshNormalMaterial();
 var arbolMalla = new THREE.Mesh(arbolForma, material);
