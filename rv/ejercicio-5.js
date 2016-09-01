@@ -1,4 +1,4 @@
-var troncoForma = new THREE.LatheBufferGeometry(30, 0, 6.3);
+var troncoForma = new THREE.LatheBufferGeometry(30);
 var esferaForma = new THREE.SphereGeometry(0.95, 32, 32);
 var cajaForma = new THREE.OctahedronGeometry (3, 0)
 
