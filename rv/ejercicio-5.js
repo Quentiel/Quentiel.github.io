@@ -1,12 +1,11 @@
-var troncoForma = new THREE.TorusGeometry(0.5, 0.3, 4, 100);
-var esferaForma = new THREE.SphereGeometry(0.55, 32, 32);
+var troncoForma = new THREE.TorusGeometry(0.3, 0.3, 4, 100);
+var esferaForma = new THREE.SphereGeometry(0.35, 32, 32);
 var cajaForma = new THREE.OctahedronGeometry (3, 0)
 
 esferaForma.translate(0,1,0);
+troncoForma.translate(0,0.5,0);
 
 troncoForma.rotateX(Math.PI/2);
-
-cajaForma.translate (1,-5,0);
 cajaForma.rotateX(Math.PI/2);
 
 var troncoMalla = new THREE.Mesh(troncoForma);
