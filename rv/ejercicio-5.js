@@ -2,7 +2,7 @@ var troncoForma = new THREE.TorusGeometry(0.9, 0.3, 4, 100);
 var esferaForma = new THREE.SphereGeometry(0.95);
 esferaForma.translate(0,1,0);
 
-troncoForma.rotateX(Math.PI/1.8);
+troncoForma.rotateX(Math.PI/2);
 
 var troncoMalla = new THREE.Mesh(troncoForma);
 var esferaMalla = new THREE.Mesh(esferaForma);
