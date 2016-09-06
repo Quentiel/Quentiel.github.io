@@ -32,7 +32,7 @@ var cubo = new THREE.Mesh (new THREE.BoxGeometry (2, 2, 2),
               
               var renderizador = new THREE.WebGLRenderer();
               renderizador.setSize (window.innerWidth,
-                                    window.innerWeight );
+                                    window.innerHeight );
                                   
                                       document.body.appendChild ( renderizador.domElement );
                                       renderizador.render (escena, camara);
