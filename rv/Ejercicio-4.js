@@ -7,7 +7,7 @@ figura.lineTo(60,35);
 figura.moveTo(5,60);
 figura.lineTo(110,70);
 figura.lineTo(20,10);
-figura.lineTo(40,50);
+figura.lineTo(30,50);
 
 var estrella= new THREE.ShapeGeometry(figura);
 var malla=new THREE.Mesh(estrella);
