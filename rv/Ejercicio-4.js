@@ -10,8 +10,7 @@ figura.lineTo(20,10);
 figura.lineTo(40,50);
 
 var estrella= new THREE.ShapeGeometry(figura);
-var material = new THREE.MeshPhongMaterial( { color: 0x185489, specular: 0x009900, shininess: 30, shading: THREE.FlatShading } );
-var malla=new THREE.Mesh(estrella, material);
+var malla=new THREE.Mesh(estrella);
 
 var escena= new THREE.Scene();
 escena.add(malla);
