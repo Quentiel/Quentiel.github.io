@@ -33,7 +33,7 @@ forma.computeFaceNormals();
 
 var material= new THREE.MeshNormalMaterial();
 
-var malla=new THREE.MeshBasicMaterial({map: texture}),
+var malla=new THREE.MeshBasicMaterial({map: texture});
 malla.rotateX(Math.PI/2);
 malla.rotateY(Math.PI/2);
 
