@@ -4,6 +4,7 @@ var cajaForma = new THREE.OctahedronGeometry (0.1, 0);
 
 esferaForma.translate(0,1,0);
 troncoForma.translate(0,0.5,0);
+cajaForma.translate(1,0,0);
 
 troncoForma.rotateX(Math.PI/2);
 cajaForma.rotateX(Math.PI/2);
