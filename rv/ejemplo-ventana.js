@@ -11,7 +11,7 @@ VENTANA.listener = function()
 }
 
 VENTANA.setup = function() {
-  var.tipo_evento = 'resize';
+  var tipo_evento = 'resize';
   
   var capturarp = false;
   
