@@ -3,17 +3,18 @@ function Agent(x=0, y=0)
 THREE.Object3D.call (this) ;
 this.position.x =x;
 this.position.y= y;
-
+}
 Agent.prototype = new THREE.Object3D();
 
 
 Agent.prototype.sense = function (environment) {};
 Agent.prototype.plan = function (environment) {};
 Agent.prototype.act = function (environment) {};
-}
-function Environment (){
+
+function Environment ()
+{
   THREE.Scene.call (this);
-  
+}  
   Environment.prototype = new THREE.Scene ();
   
   Environment.prototype.sense = function (){
@@ -37,7 +38,7 @@ function Environment (){
           
   }
   }
-}
+
 function Pelota ( r, x=0, y=0) {
   Agent.call (this, x, y);
   this.add (new THREE.Mesh (new THREE.SphereGeometry ( r ), new THREE.MeshNormalMaterial()));
