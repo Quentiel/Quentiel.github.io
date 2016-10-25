@@ -10,7 +10,7 @@ Agent.prototype = new THREE.Object3D();
 Agent.prototype.sense = function (environment) {};
 Agent.prototype.plan = function (environment) {};
 Agent.prototype.act = function (environment) {};
-
+}
 function Environment (){
   THREE.Scene.call (this);
   
@@ -37,7 +37,7 @@ function Environment (){
           
   }
   }
-
+}
 function Pelota ( r, x=0, y=0) {
   Agent.call (this, x, y);
   this.add (new THREE.Mesh (new THREE.SphereGeometry ( r ), new THREE.MeshNormalMaterial()));
