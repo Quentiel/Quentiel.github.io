@@ -105,7 +105,8 @@ document.body.appendChild( renderer.domElement );
 
 }
 
-function loop(){
+function loop()
+{
   requestAnimationFrame (loop);
   
   entorno.sense();
@@ -113,7 +114,7 @@ function loop(){
   entorno.act();
   renderer.render(entorno, camara);
   
-  }
+}
 
   
   
