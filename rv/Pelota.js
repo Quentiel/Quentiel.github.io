@@ -99,7 +99,7 @@ entorno.add ( new Pared ( 1, 7, -1 ));
 entorno.add ( new Pared ( 1, -7, -1 ));
 entorno.add (camara);
 
-renderer = nerw THREE.WebGLRenderer();
+renderer = new THREE.WebGLRenderer();
 renderer.setSize( window.innerHeight*.95, window.innerHeight*.95);
 document.body.appendChild( renderer.domElement );
 
